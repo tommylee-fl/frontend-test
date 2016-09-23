@@ -1,0 +1,6 @@
+<div ng-controller='NewsController as news'>
+
+<div ng-repeat="card_panel in news.listings">
+  <rl-card source='{{card_panel.source}}' date='{{card_panel.date}}' lead='{{card_panel.lead}}'></rl-card>
+</div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <base href="/">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <div ng-include='"/app/layout/main.layout.html"'></div>
+  </div>
+
+  <!-- Starting of all the loading of scripts-->
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/node_modules/angular-route/angular-route.js"></script>
+  <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+  <!-- Add additional pages here.-->
+  <script src="/app/app.module.js"></script>
+
+  <script src="/app/activity.service.js"></script>
+
+  <script src="/app/dashboard/dashboard.module.js"></script>
+  <script src="/app/dashboard/dashboard.controller.js"></script>
+
+  <script src='/app/layout/layout.module.js'></script>
+  <script src='/app/layout/layout.controller.js'></script>
+
+  <script src='/app/navigation/navigation.module.js'></script>
+  <script src='/app/navigation/sidenav.controller.js'></script>
+  <script src='/app/navigation/sidenav.directive.js'></script>
+
+  <script src='/app/news/news.module.js'></script>
+  <script src='/app/news/news.controller.js'></script>
+  <script src='/app/news/card/card.module.js'></script>
+  <script src='/app/news/card/card.directive.js'></script>
+  <script src="/app/app.route.js"></script>
+</body>
+</html>
