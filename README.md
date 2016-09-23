@@ -38,6 +38,7 @@ Click on the News Link to See the News.
 4. Add in Admin Name and Gear.
 5. Write some Tests in Jasmine.
 6. Write some Gulp Tasks to minify, concatenate, uglify scripts and put into a dist folder.
+7. Comment Code, and process code through linter.
 
 
 Designs that need to be Finished:
